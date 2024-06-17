@@ -25,7 +25,7 @@ export default function RootLayout({
         <ThemeProvider theme={theme}>
           <main>
             <Header />
-            <Container maxWidth="lg">{children}</Container>
+            <Container maxWidth='lg'>{children}</Container>
           </main>
         </ThemeProvider>
       </body>
