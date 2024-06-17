@@ -1,5 +1,3 @@
-// TODO: Not actually used but serves as an example for
-// component overrides
 import {
   ComponentsOverrides,
   Theme,
@@ -7,13 +5,13 @@ import {
 
 import { colours } from "./colours/colours";
 
-export const defaultAppBarStyles: ComponentsOverrides<Theme>["MuiAppBar"] = {
+export const defaultButtonStyles: ComponentsOverrides<Theme>["MuiButton"] = {
   root: {
-    backgroundColor: colours.backgroundWhite,
     color: colours.fontColorGrey,
+    textTransform: "none",
   },
 };
 
-export const defaultAppBar = {
-  styleOverrides: defaultAppBarStyles,
+export const defaultButton = {
+  styleOverrides: defaultButtonStyles,
 };

@@ -4,7 +4,6 @@ import React from "react";
 
 import {
   AppBar,
-  Avatar,
   Box,
   Button,
   Container,
@@ -16,8 +15,7 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
-const pages = ["Products", "Pricing", "Blog"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+const pages = ["Navigation", "Socials", "Tools", "Contact Me"];
 
 export default function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -36,21 +34,33 @@ export default function Header() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                {page}
-              </Button>
-            ))}
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex" },
+              flexDirection: "row",
+              justifyContent: "center",
+              gap: "25px",
+            }}
+          >
+            <Button onClick={handleCloseNavMenu}>Navigation</Button>
+
+            <Button onClick={handleCloseNavMenu} sx={{ display: "block" }}>
+              Socials
+            </Button>
+
+            <Button onClick={handleCloseNavMenu} sx={{ display: "block" }}>
+              Tools
+            </Button>
+
+            <Button onClick={handleCloseNavMenu} sx={{ display: "block" }}>
+              Contact Me
+            </Button>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
-              aria-label="account of current user"
+              aria-label="menu"
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
