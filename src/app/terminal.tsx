@@ -1,8 +1,9 @@
+import TerminalIcon from "@/components/icons/terminal-icon";
 import { Box } from "@mui/material";
 
 export default function Terminal() {
-  const flexGrowChildTerminal = 0.93;
-  const flexGrowChildTerminalHeader = 1 - flexGrowChildTerminal;
+  const terminalBlack = "#000000";
+  const terminalWhiteFont = "#ffffff";
 
   return (
     <Box
@@ -18,28 +19,44 @@ export default function Terminal() {
       <Box
         sx={{
           marginTop: "10px",
-          flexGrow: flexGrowChildTerminalHeader,
           display: "flex",
-          flexDirection: "column",
-          justifyContent: "flex-start",
-          backgroundColor: "white",
-          height: "1px"
+          flexDirection: "row",
+          //   justifyContent: "flex-start",
+          //   maxHeight: "25px",
         }}
       >
         <Box
           sx={{
-            flexGrow: 1,
-            backgroundColor: "black",
+            display: "flex",
+            flexDirection: "row",
+            backgroundColor: terminalBlack,
             marginLeft: "10px",
-            width: "100px",
-            maxHeight: "50px",
+            width: "150px",
+            borderRadius: "4.5px 4.5px 0 0",
           }}
-        >test</Box>
+        >
+          <Box
+            sx={{
+              padding: "5px",
+            }}
+          >
+            <TerminalIcon></TerminalIcon>
+          </Box>
+          <Box
+            sx={{
+              color: terminalWhiteFont,
+              fontSize: "12px",
+              padding: "5px",
+            }}
+          >
+            creyesprog@hello
+          </Box>
+        </Box>
       </Box>
       <Box
         sx={{
-          flexGrow: flexGrowChildTerminal,
-          backgroundColor: "#000000",
+          flexGrow: 1,
+          backgroundColor: terminalBlack,
         }}
       ></Box>
     </Box>
