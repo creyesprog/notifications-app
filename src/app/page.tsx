@@ -1,5 +1,5 @@
 import { Container } from "@mui/material";
-import Terminal from "./terminal";
+import Terminal from "../components/default/terminal";
 
 export default function Index() {
   return (
