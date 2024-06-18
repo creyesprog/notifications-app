@@ -1,7 +1,10 @@
 import Close from "@mui/icons-material/close";
-import { Box, Icon } from "@mui/material";
-import TerminalTab from "./terminal-tab";
+import MinimizeIcon from '@mui/icons-material/Minimize';
+import { Box } from "@mui/material";
+
 import { colours } from "@/themes/colours/colours";
+
+import TerminalTab from "./terminal-tab";
 
 export default function TerminalHeader() {
   return (
@@ -13,6 +16,10 @@ export default function TerminalHeader() {
     >
       <TerminalTab></TerminalTab>
       <Box>
+        <MinimizeIcon sx={{
+            color: colours.terminalWhiteFont,
+            fontSize: "1rem",            
+        }}></MinimizeIcon>
         <Close
           sx={{
             color: colours.terminalWhiteFont,

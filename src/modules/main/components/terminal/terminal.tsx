@@ -11,7 +11,7 @@ export default function Terminal() {
         minHeight: "50vh",
         display: "flex",
         flexDirection: "column",
-        borderRadius: "4.5px",
+        borderRadius: "6px",
         boxShadow: "0px 0px 10px 0px #000000",
       }}
     >

@@ -1,9 +1,8 @@
-import Close from "@mui/icons-material/close";
 import { Box, Typography } from "@mui/material";
 
 import { colours } from "@/themes/colours/colours";
-
-import TerminalIcon from "../icons/terminal-icon";
+import TerminalIcon from "../../icons/terminal-icon";
+import TerminalCloseIcon from "./terminal-close-icon";
 
 export default function TerminalTab() {
   return (
@@ -16,7 +15,7 @@ export default function TerminalTab() {
         marginTop: "10px",
         marginLeft: "10px",
         width: "175px",
-        borderRadius: "4.5px 4.5px 0 0",
+        borderRadius: "6px 6px 0 0",
         padding: "5px",
       }}
     >
@@ -35,12 +34,7 @@ export default function TerminalTab() {
         <Typography variant="caption">creyesprog@hello</Typography>
       </Box>
       <Box display="flex" alignItems="center" marginLeft="auto">
-        <Close
-          sx={{
-            color: colours.terminalWhiteFont,
-            fontSize: "1rem",
-          }}
-        ></Close>
+        <TerminalCloseIcon></TerminalCloseIcon>
       </Box>
     </Box>
   );
