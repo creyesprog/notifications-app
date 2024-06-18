@@ -1,7 +1,7 @@
-import TerminalIcon from "@/components/icons/terminal-icon";
 import { Box } from "@mui/material";
+
 import TerminalTab from "./terminal-tab";
-import { colours } from "@/themes/colours/colours";
+import TerminalContent from "./terminal-content";
 
 export default function Terminal() {
   return (
@@ -16,12 +16,7 @@ export default function Terminal() {
       }}
     >
       <TerminalTab></TerminalTab>
-      <Box
-        sx={{
-          flexGrow: 1,
-          backgroundColor: colours.terminalBlack,
-        }}
-      ></Box>
+      <TerminalContent></TerminalContent>
     </Box>
   );
 }
