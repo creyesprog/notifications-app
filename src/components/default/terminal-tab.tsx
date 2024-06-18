@@ -1,3 +1,4 @@
+import Close from "@mui/icons-material/close";
 import { Box, Typography } from "@mui/material";
 
 import { colours } from "@/themes/colours/colours";
@@ -8,33 +9,38 @@ export default function TerminalTab() {
   return (
     <Box
       sx={{
-        marginTop: "10px",
         display: "flex",
         flexDirection: "row",
+        alignItems: "center",
+        backgroundColor: colours.terminalBlack,
+        marginTop: "10px",
+        marginLeft: "10px",
+        width: "175px",
+        borderRadius: "4.5px 4.5px 0 0",
+        padding: "5px",
       }}
     >
+      <Box display="flex" alignItems="center">
+        <TerminalIcon></TerminalIcon>
+      </Box>
       <Box
         sx={{
+          color: colours.terminalWhiteFont,
           display: "flex",
-          flexDirection: "row",
-          backgroundColor: colours.terminalBlack,
-          marginLeft: "10px",
-          width: "150px",
-          borderRadius: "4.5px 4.5px 0 0",
+          alignItems: "center",
+          fontSize: "12px",
+          paddingLeft: "5px",
         }}
       >
-        <Box padding="5px">
-          <TerminalIcon></TerminalIcon>
-        </Box>
-        <Box
+        <Typography variant="caption">creyesprog@hello</Typography>
+      </Box>
+      <Box display="flex" alignItems="center" marginLeft="auto">
+        <Close
           sx={{
             color: colours.terminalWhiteFont,
-            fontSize: "12px",
-            padding: "5px",
+            fontSize: "1rem",
           }}
-        >
-          <Typography variant="caption">creyesprog@hello</Typography>
-        </Box>
+        ></Close>
       </Box>
     </Box>
   );
