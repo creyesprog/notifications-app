@@ -21,8 +21,6 @@ export default function Terminal() {
           marginTop: "10px",
           display: "flex",
           flexDirection: "row",
-          //   justifyContent: "flex-start",
-          //   maxHeight: "25px",
         }}
       >
         <Box
@@ -35,11 +33,7 @@ export default function Terminal() {
             borderRadius: "4.5px 4.5px 0 0",
           }}
         >
-          <Box
-            sx={{
-              padding: "5px",
-            }}
-          >
+          <Box padding="5px">
             <TerminalIcon></TerminalIcon>
           </Box>
           <Box
