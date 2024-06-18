@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 import { colours } from "@/themes/colours/colours";
 
@@ -33,7 +33,7 @@ export default function TerminalTab() {
             padding: "5px",
           }}
         >
-          creyesprog@hello
+          <Typography variant="caption">creyesprog@hello</Typography>
         </Box>
       </Box>
     </Box>

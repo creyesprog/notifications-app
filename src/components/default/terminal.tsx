@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 
-import TerminalTab from "./terminal-tab";
 import TerminalContent from "./terminal-content";
+import TerminalHeader from "./terminal-header";
 
 export default function Terminal() {
   return (
@@ -15,7 +15,7 @@ export default function Terminal() {
         boxShadow: "0px 0px 10px 0px #000000",
       }}
     >
-      <TerminalTab></TerminalTab>
+      <TerminalHeader></TerminalHeader>
       <TerminalContent></TerminalContent>
     </Box>
   );
