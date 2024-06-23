@@ -1,6 +1,6 @@
 import { SvgIcon } from "@mui/material";
 
-export function TerminalCloseIcon() {
+export function TerminalMinimizeIcon() {
   return (
     <SvgIcon
       sx={{
@@ -16,18 +16,10 @@ export function TerminalCloseIcon() {
         xmlns="http://www.w3.org/2000/svg"
       >
         <line
-          x1="23.2879"
-          y1="22.7121"
-          x2="1.10175"
-          y2="0.52595"
-          stroke="white"
-          stroke-width="0.6"
-        />
-        <line
-          y1="-0.3"
-          x2="31.3759"
-          y2="-0.3"
-          transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 0.499969 22.4999)"
+          x1="2.62268e-08"
+          y1="11.7"
+          x2="24"
+          y2="11.7"
           stroke="white"
           stroke-width="0.6"
         />
