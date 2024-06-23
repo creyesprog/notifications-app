@@ -1,6 +1,6 @@
 import { SvgIcon } from "@mui/material";
 
-export default function TerminalIcon() {
+export function TerminalIcon() {
   return (
     <SvgIcon sx={{
         width: "15px",

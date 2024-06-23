@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 
 import { colours } from "@/themes/colours/colours";
 
-export default function TerminalContent() {
+export function TerminalContent() {
   return (
     <Box
       sx={{

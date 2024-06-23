@@ -1,7 +1,7 @@
 import { colours } from "@/themes/colours/colours";
 import Close from "@mui/icons-material/close";
 
-export default function TerminalCloseIcon() {
+export function TerminalCloseIcon() {
   return (
     <Close
       sx={{

@@ -1,9 +1,8 @@
 import { Box } from "@mui/material";
 
-import TerminalContent from "./terminal-content";
-import TerminalHeader from "./terminal-header";
+import { TerminalContent, TerminalHeader } from '.';
 
-export default function Terminal() {
+export function Terminal() {
   return (
     <Box
       sx={{

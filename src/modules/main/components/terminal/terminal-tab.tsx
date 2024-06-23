@@ -1,10 +1,10 @@
 import { Box, Typography } from "@mui/material";
 
 import { colours } from "@/themes/colours/colours";
-import TerminalIcon from "../../icons/terminal-icon";
-import TerminalCloseIcon from "./terminal-close-icon";
+import { TerminalIcon } from "../../../../core/icons";
+import { TerminalCloseIcon } from "./terminal-close-icon";
 
-export default function TerminalTab() {
+export function TerminalTab() {
   return (
     <Box
       sx={{
