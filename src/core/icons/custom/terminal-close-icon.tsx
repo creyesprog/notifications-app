@@ -4,6 +4,7 @@ export function TerminalCloseIcon() {
   return (
     <SvgIcon
       sx={{
+        display: "block",
         width: "15px",
         height: "15px",
       }}
@@ -21,7 +22,7 @@ export function TerminalCloseIcon() {
           x2="1.10175"
           y2="0.52595"
           stroke="white"
-          stroke-width="0.6"
+          strokeWidth="0.6"
         />
         <line
           y1="-0.3"
@@ -29,7 +30,7 @@ export function TerminalCloseIcon() {
           y2="-0.3"
           transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 0.499969 22.4999)"
           stroke="white"
-          stroke-width="0.6"
+          strokeWidth="0.6"
         />
       </svg>
     </SvgIcon>

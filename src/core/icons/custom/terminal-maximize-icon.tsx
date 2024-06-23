@@ -4,6 +4,7 @@ export function TerminalMaximizeIcon() {
   return (
     <SvgIcon
       sx={{
+        display: "block",
         width: "15px",
         height: "15px",
       }}
@@ -15,14 +16,14 @@ export function TerminalMaximizeIcon() {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g clip-path="url(#clip0_32_8)">
+        <g clipPath="url(#clip0_32_8)">
           <rect
             x="0.3"
             y="0.3"
             width="23.4"
             height="23.4"
             stroke="white"
-            stroke-width="0.6"
+            strokeWidth="0.6"
           />
         </g>
         <defs>

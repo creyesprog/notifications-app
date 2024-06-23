@@ -4,6 +4,7 @@ export function TerminalMinimizeIcon() {
   return (
     <SvgIcon
       sx={{
+        display: "block",
         width: "15px",
         height: "15px",
       }}
@@ -21,7 +22,7 @@ export function TerminalMinimizeIcon() {
           x2="24"
           y2="11.7"
           stroke="white"
-          stroke-width="0.6"
+          strokeWidth="0.6"
         />
       </svg>
     </SvgIcon>
