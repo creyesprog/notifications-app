@@ -24,9 +24,9 @@ export function TerminalContent() {
           style={{ whiteSpace: "pre-line" }}
           sequence={[
             ">",
-            "> Hello, world.\n> I'm Christian Reyes.\n> Full-stack web developer",
+            "> Hello, world.\n> I'm Christian Reyes.\n> Full-stack web developer.",
           ]}
-          speed={30}
+          speed={35}
         ></TypeAnimation>
       </Typography>
     </Box>
