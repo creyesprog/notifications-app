@@ -8,7 +8,7 @@ export function TerminalHeader() {
     <Box display="flex" justifyContent="space-between">
       <TerminalTab></TerminalTab>
       <Box display="flex" justifyContent="center" alignItems="center">
-        <Box display="flex" flexDirection="row" gap="36px" alignItems="center" justifyContent="center">
+        <Box display="flex" flexDirection="row" gap="25px" alignItems="center" justifyContent="center">
           <Box>
             <TerminalMinimizeIcon></TerminalMinimizeIcon>
           </Box>

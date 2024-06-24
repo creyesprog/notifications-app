@@ -1,14 +1,34 @@
-import { Box } from "@mui/material";
+"use client";
+
+import { Box, Typography } from "@mui/material";
+
+import { TypeAnimation } from "react-type-animation";
 
 import { colours } from "@/themes/colours/colours";
+import "./terminal-content.scss";
 
 export function TerminalContent() {
   return (
     <Box
+      id="terminal-content"
       sx={{
         flexGrow: 1,
         backgroundColor: colours.terminalBlack,
+        padding: "15px 0 0 30px",
+        fontSize: "5rem",
       }}
-    ></Box>
+    >
+      <Typography variant="body1" color="white">
+        <TypeAnimation
+          preRenderFirstString={true}
+          style={{ whiteSpace: "pre-line" }}
+          sequence={[
+            ">",
+            "> Hello, world.\n> I'm Christian Reyes.\n> Full-stack web developer",
+          ]}
+          speed={30}
+        ></TypeAnimation>
+      </Typography>
+    </Box>
   );
 }
