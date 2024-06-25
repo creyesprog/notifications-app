@@ -3,7 +3,7 @@ import Terminal from "../modules/main/components/terminal";
 
 export default function Index() {
   return (
-    <Container
+    <Container maxWidth="md"
       sx={{
         paddingTop: "10vh",
       }}
