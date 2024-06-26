@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next dev",
-    "prod": "next start",
+    "prod": "next build && next start",
     "lint": "next lint"
   },
   "dependencies": {
@@ -24,17 +24,17 @@
     "punycode": "^2.3.1",
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0",
-    "react-type-animation": "^3.2.0"
+    "react-type-animation": "^3.2.0",
+    "sass": "^1.77.5"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
+    "@types/node": "20.14.9",
+    "@types/react": "18.3.3",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
     "postcss": "^8",
-    "sass": "^1.77.5",
-    "typescript": "^5"
+    "typescript": "5.5.2"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0",

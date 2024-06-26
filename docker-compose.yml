@@ -1,0 +1,10 @@
+name: portfolio
+
+services:
+  frontend:
+    image: portfolio/frontend
+    build:
+      context: .
+      dockerfile: 'Dockerfile'
+    ports:
+      - "3000:3000"
