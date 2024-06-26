@@ -5,7 +5,6 @@ import { Box, Typography } from "@mui/material";
 import { TypeAnimation } from "react-type-animation";
 
 import { colours } from "@/themes/colours/colours";
-import "./terminal-content.scss";
 
 export function TerminalContent() {
   return (
@@ -21,7 +20,7 @@ export function TerminalContent() {
       <Typography variant="body1" color="white">
         <TypeAnimation
           preRenderFirstString={true}
-          style={{ whiteSpace: "pre-line" }}
+          style={{ fontSize: "2rem", whiteSpace: "pre-line" }}
           sequence={[
             ">",
             "> Hello, world.\n> I'm Christian Reyes.\n> Full-stack web developer.",
