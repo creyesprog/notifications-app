@@ -4,8 +4,8 @@ WORKDIR /build
 
 COPY package.json .
 RUN npm install
-COPY . .
 
+COPY . .
 RUN npm run build
 
 # Run stage
